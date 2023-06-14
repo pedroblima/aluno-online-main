@@ -6,7 +6,7 @@ Quando('ele informar a matricula {string} e a senha {string}') do |matricula, se
     fill_in('inputMatricula', with: matricula)
     fill_in('inputSenha', with: senha)
     click_button('Entrar')
-end
+
   
 Então('ele deveria ver a mensagem {string}') do |msg|
     page.assert_text(msg)
