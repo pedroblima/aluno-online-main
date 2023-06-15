@@ -4,6 +4,6 @@ describe('teste aluno-online', () => {
     cy.get('#inputDisciplina').select('ADS030 - Manutenção de Software e DevOps')
     cy.get('#inputProva').select('A2')
     cy.get('#inputArgumentacao').type('eu mereço tirar 10')
-    cy.get('.btn-danger')
+    cy.get('.btn-danger').click()
   })
 })
